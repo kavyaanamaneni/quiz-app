@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+   width: 400px;
+   height: 350px;
+   border: 2px solid #2dace7;
+   border-radius: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: rgb(114, 139, 160);
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%,-50%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Mainmenu button,.quiz button,.endScreen button{
+   width:300px;
+   height: 30px;
+   border-radius: 20px;
+   background-color: #976484;
+   color:#fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.options{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+h1{
+   text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Mainmenu button:hover{
+   background-color: #b03d85;  
+   height: 40px;
+}
+.quiz button:hover{
+   background-color: #b03d85;  
+   height: 40px;
+}
+.endScreen button:hover{
+   background-color: #b03d85;  
+   height: 40px;
 }
